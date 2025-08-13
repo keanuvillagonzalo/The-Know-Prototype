@@ -1,0 +1,260 @@
+:root{
+    --primary-color: #009BB5;
+
+    --primary-text-color: black;
+
+    --dark-text-color-green: #003B33;
+    --background-color-white: white;
+    --background-color-black: black;
+
+
+    --primary-navbar-text-color: #334559;
+    
+
+    --primary--gif--border: #007F6D;
+}
+
+
+html, body {
+
+  padding: 0;
+  background: inherit; /* This makes it follow the inner container’s background if you set one */
+}
+
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    margin: auto 0;
+    
+}
+
+h1{
+    font-size: 3.5em;
+    color: var(--primary-text-color);
+}
+
+h2{
+    font-size: 2.25em;
+    color: var(--primary-text-color);
+}
+p{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.p-shaded{
+    color: var(--primary-text-color);
+    font-size: 1.25em;
+    opacity: 30%;
+}
+
+.btn{
+     all: unset;
+     width: fit-content;
+     padding-left: 8px;
+     padding-right: 8px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    height: 52px;
+    background-color: var(--primary-color);
+    color: var(--background-color-white);
+    border-radius: 10px;
+   border-color: var(--primary-color);
+}
+
+
+.hero-section .home-hero-features{
+     top: 0;
+    left: 0;
+    width: 100vw;
+    height: fit-content;
+    background-color: var(--background-color-black);
+    
+}
+
+.hero-section-overlay{
+    width: inherit;
+    height: 5vh;
+    background-color: var(--dark-text-color-green);
+}
+
+.hero-section-overlay-text{
+    margin-left: 90px;
+    margin-right: 90px;
+    display: flex;
+    gap: 32px;
+    color: var(--background-color-white);
+    justify-content: left;
+    font-size: 0.75em;;
+}
+
+.hero-section-main{
+    width: inherit;
+    height: fit-content;
+    background-color: var(--background-color-white);
+}
+
+.hero-section-navbar{
+    margin-left: 70px;
+    margin-right: 70px;
+display: flex;
+gap: 85px;
+height: 100px;
+}
+
+.logo{
+   background: url("assets/TheKnow-Logo-Transparent-bg.png") no-repeat center center;
+  background-size: cover; /* or contain, depending on your goal */  
+   width: 200px;
+    height: inherit;
+}
+
+.navbar{
+    width: 793px;
+    height: inherit;
+}
+
+.navbar-contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    color: var(--primary-navbar-text-color);
+    gap: 68px;
+    height: inherit;
+}
+
+.button-wrapper{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.hero-section-center{
+    margin-left: 70px;
+    width: 100vw;
+    height: 40em;
+
+}
+
+.hero-two-column-section{
+
+    position: relative;
+    display: flex;
+    top: 54px;
+    height: fit-content;
+}
+
+.hero-two-column-section-1 .hero-two-column-section-2{
+    display: flex;
+    height: inherit;
+    width: 50%;
+   
+}
+
+.hero-two-column-section-1{
+     margin-left: 16px;
+    margin-right: 16px;
+   padding-top: 16px;
+}
+
+.hero-h2{
+    opacity: 80%; line-height: 150%; font-weight: 500;
+}
+
+.hero-two-column-section-2{
+    position: relative;
+    left: 7%;
+    background-image: url("./assets/pulse-resized.gif");
+    background-size: cover;
+    height: 524px;
+    width: 742px;
+     border-left: 20px solid var(--primary--gif--border); /* stroke width + color */
+  border-radius: 20px;             /* rounds all corners */
+}
+
+.investors-section{
+    display: block;
+    padding-bottom: 56px;
+}
+
+.investors-logo-section{
+    background-image: url("./assets/Group\ 10.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 21vh;
+    width: 100%;
+    
+}
+
+.centered-blurb-section{
+    display: flex;
+    line-height: auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    
+}
+
+.centered-blurb-section-div{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+   
+}
+
+.centered-blurb-section-paragraph{
+    margin-left: 260px;
+    margin-right: 260px;
+}
+
+.tight-heading {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.tight-paragraph {margin-bottom: 1em;
+  margin-right: 160px;
+  margin-left: 160px;
+}
+
+.hero-features-column-section-1{
+    width: 416px;
+    margin-left: 190px;
+  
+}
+
+
+.hero-features-column, .hero-features-column-1, .hero-features-column-2, .hero-features-column-3{
+    position: relative;
+    left: 7%;
+  
+    background-size: cover;
+    height: 421px;
+    width: 627px;
+     border-left: 20px solid var(--primary--gif--border); /* stroke width + color */
+  border-radius: 20px;             /* rounds all corners */
+}
+
+.hero-features-column-1{
+    background-image: url("./assets/pulse-resized.gif");
+}
+
+.hero-features-column-2{
+    background-image: url("./assets/benchmarking-resized.gif");
+}
+.hero-features-column-3{
+    background-image: url("./assets/scorecard-resized.gif");
+}

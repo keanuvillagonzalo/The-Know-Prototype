@@ -1,0 +1,15 @@
+ .typewriter-container {
+      width: fit-content;
+      height: 40px;
+      font-size: 36px;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid black;
+      animation: blink-caret 0.75s step-end infinite;
+      margin-bottom: 40px;
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent; }
+      50% { border-color: black; }
+    }
