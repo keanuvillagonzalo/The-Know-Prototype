@@ -258,3 +258,29 @@ height: 100px;
 .hero-features-column-3{
     background-image: url("./assets/scorecard-resized.gif");
 }
+
+.footer{
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-text-color-green);
+    display: flex;
+    gap: 100px;
+    color: var(--background-color-white)
+}
+
+.white-logo{
+    background-image: url("./assets/the-know-logo-trans.png");
+    width: 200px;
+    height: 58px;
+}
+
+.footer-text{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.d{
+    display: flex;
+    gap: 68px;
+}

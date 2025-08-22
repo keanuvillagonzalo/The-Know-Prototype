@@ -9,6 +9,61 @@
       margin-bottom: 40px;
     }
 
+/* Fade-in animation for hero and sections */
+
+.fade-in, .feature-fade-in, .slide-in-left {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fade-in.in-view {
+  animation: fadeIn 1.2s ease-out forwards;
+  opacity: 1;
+  pointer-events: auto;
+}
+.feature-fade-in.in-view {
+  animation: fadeIn 1.2s ease-out forwards;
+  opacity: 1;
+  pointer-events: auto;
+}
+.slide-in-left.in-view {
+  animation: slideInLeft 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Slide-in from left for headings */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Button pop/hover effect */
+.btn {
+  transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover, .btn:focus {
+  transform: scale(1.06) translateY(-2px);
+  box-shadow: 0 6px 24px 0 rgba(0,155,181,0.12);
+}
+
+/* Feature columns fade-in staggered */
+.feature-fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+/* Utility for animation delay */
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+
     @keyframes blink-caret {
       from, to { border-color: transparent; }
       50% { border-color: black; }
